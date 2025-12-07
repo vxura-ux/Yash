@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yash — Neon Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animations.css" />
+  <link rel="stylesheet" href="theme.css" />
+</head>
+<body class="page neon-body">
+
+  <!-- decorative particles (CSS) -->
+  <div class="particles" aria-hidden="true"></div>
+
+  <!-- topbar -->
+  <header class="glass-nav topbar">
+    <div class="brand">
+      <div class="logo">YASH</div>
+      <div class="subtitle">Neon UI • Motion • Design</div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <button id="themeToggle" class="icon-btn" aria-label="toggle theme">🌙</button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-left glass-box">
+        <h1 class="hero-title">Hello — I’m <span class="accent">Yash</span></h1>
+        <p class="lead">Developer • Editor • Gamer — I build neon UI experiences and animated interfaces.</p>
+
+        <div class="cta">
+          <a href="projects.html" class="btn">View Projects</a>
+          <a href="contact.html" class="btn outline">Contact</a>
+        </div>
+
+        <ul class="stats">
+          <li><strong>16</strong><span>Age</span></li>
+          <li><strong>5+</strong><span>Projects</span></li>
+          <li><strong>Editing</strong><span>Hobby</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <!-- 3D slider -->
+        <div class="slider-wrap glass-box">
+          <div class="slider" id="slider">
+            <div class="slide" data-index="0">
+              <div class="card">
+                <div class="card-inner">
+                  <h3>Interactive Portfolio UI</h3>
+                  <p>Neon glass panels, motion-first design.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide" data-index="1">
+              <div class="card">
+                <div class="card-inner">
+                  <h3>Game HUD Concept</h3>
+                  <p>Clear, readable HUD with layered info.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slide" data-index="2">
+              <div class="card">
+                <div class="card-inner">
+                  <h3>Editing Reel Mock</h3>
+                  <p>Transition tests and stylized cuts.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <button class="prev">‹</button>
+            <div class="dots" id="dots"></div>
+            <button class="next">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE SELECTOR SECTOR -->
+    <section class="page-selector">
+      <h2 class="section-title">Explore The Portfolio</h2>
+      <div class="sector-container">
+        <a href="about.html" class="sector about-sec"><span>About</span></a>
+        <a href="projects.html" class="sector proj-sec"><span>Projects</span></a>
+        <a href="skills.html" class="sector skills-sec"><span>Skills</span></a>
+        <a href="contact.html" class="sector contact-sec"><span>Contact</span></a>
+      </div>
+    </section>
+
+    <!-- FEATURED -->
+    <section id="featured" class="section">
+      <h2 class="section-title">Featured</h2>
+      <div class="project-grid">
+        <article class="project card">
+          <h3>Portfolio UI</h3>
+          <p>Glass + neon + motion.</p>
+        </article>
+
+        <article class="project card">
+          <h3>HUD Suite</h3>
+          <p>Game-friendly HUD concepts.</p>
+        </article>
+
+        <article class="project card">
+          <h3>Editing Pack</h3>
+          <p>LUTs, transitions and presets (demo).</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made with ❤️ by Yash • Email: <a href="mailto:vxura90@gmail.com">vxura90@gmail.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

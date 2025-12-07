@@ -1,0 +1,19 @@
+/* animations.css */
+.page{animation:pageFade .9s ease both}
+@keyframes pageFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+.card{transition:transform .35s cubic-bezier(.2,.9,.3,1),box-shadow .35s}
+.card:hover{transform:translateY(-8px);box-shadow:0 22px 70px rgba(0,240,255,0.06)}
+
+.hero-title{animation:glowIn 1s both}
+@keyframes glowIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+.hero-left .lead{animation:fadeUp .9s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+/* typing subtitle */
+.subtitle.typing{display:inline-block;overflow:hidden;border-right:2px solid rgba(255,255,255,0.12);white-space:nowrap;animation:typing 3s steps(30,end) 1, blink .8s step-end infinite}
+@keyframes typing{from{width:0}to{width:100%}} @keyframes blink{50%{border-color:transparent}}
+
+/* card inner micro motion */
+.card .card-inner{transform-origin:center center;transition:transform .45s cubic-bezier(.2,.9,.3,1);will-change:transform}
